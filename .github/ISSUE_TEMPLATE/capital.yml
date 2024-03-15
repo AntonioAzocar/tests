@@ -2,32 +2,27 @@ name: 💻✏️ Capital
 description: Template to create a new task
 labels: team-proto
 body:
-- type: dropdown
+- type: input
   attributes:
-    label: Select project
+    label: Project
     description: please select the project
-    options:
-      - ergoCub1.0 S/N:000
-      - ergoCub1.1.0 S/N:001
-      - ergoCub1.1.3 S/N:002
-      - iCub2.X
-      - iCub Misc
-      - Test boards equipments    
+    placeholder:  
   validations:
     required: true
 - type: textarea
   attributes:
-    label: Task description
+    label: Activity reason
     placeholder: |
-      Write here a meaningful description of the task
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Definition of Done
-    placeholder: |
-      - [ ] task 1
-      - [ ] task 2
-      - [ ] ...
+      - [ ] Fix error
+      - [ ] Update schematics
+      - [ ] Update BOM
+      - [ ] New robot schematics
   validations:
     requiered: true
+    - type: textarea
+  attributes:
+    label: Additonal information
+    placeholder: |
+      Write an activity description here
+  validations:
+    required: true
