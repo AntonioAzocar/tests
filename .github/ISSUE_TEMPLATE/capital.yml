@@ -12,13 +12,12 @@ body:
 - type: textarea
   attributes:
     label: Activity reason
-    placeholder: |
-      - [ ] Fix error
-      - [ ] Update schematics
-      - [ ] Update BOM
-      - [ ] New robot schematics
-  validations:
-    requiered: true
+    description: select the reason for the activity
+    value: |
+        - [ ] Update schematics
+        - [ ] Update BOM
+        - [ ] New robot schematics
+        - [ ] Fix error
     - type: textarea
   attributes:
     label: Additonal information
