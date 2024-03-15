@@ -10,18 +10,21 @@ body:
   validations:
     required: true
 - type: textarea
+  id: activity
   attributes:
     label: Activity reason
     description: select the reason for the activity
     value: |
-        - [ ] Update schematics
-        - [ ] Update BOM
-        - [ ] New robot schematics
-        - [ ] Fix error
-    - type: textarea
+      - [ ] Update schematics
+      - [ ] Update BOM
+      - [ ] New robot schematics
+      - [ ] Fix error
+  validations:
+    required: true    
+- type: textarea
+  id: informations
   attributes:
-    label: Additonal information
-    placeholder: |
-      Write an activity description here
+    label: Additonal informations
+    descriptions: Write an activity description here
   validations:
     required: true
