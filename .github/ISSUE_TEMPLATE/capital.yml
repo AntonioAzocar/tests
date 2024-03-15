@@ -15,7 +15,6 @@ body:
       - Test boards equipments    
   validations:
     required: true
-body:
 - type: textarea
   attributes:
     label: Task description
