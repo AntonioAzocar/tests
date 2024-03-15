@@ -3,14 +3,14 @@ description: Template to create a new task
 labels: team-proto
 body:
 - type: dropdown
-    id: robot
-    attributes:
-      label: Select project
-      description: please select the project
-      options:
-        - "ergoCub1.0 S/N:000"
-        - "ergoCub1.1.0 S/N:001"
-        - "ergoCub1.1.3 S/N:002"
+  id: robot
+  attributes:
+    label: Select project
+    description: please select the project
+    options:
+      - "ergoCub1.0 S/N:000"
+      - "ergoCub1.1.0 S/N:001"
+      - "ergoCub1.1.3 S/N:002"
         body:
         - type: dropdown
           id: robot
@@ -22,8 +22,8 @@ body:
               - "iCub 2"
               - "iCub 3"
               - "iCub Misc"
-         validations:
-          required: true     
+          validations:
+            required: true     
   validations:
     required: true
 body:
