@@ -3,7 +3,6 @@ description: Template to create a new task
 labels: team-proto
 body:
 - type: dropdown
-  id: robot
   attributes:
     label: Select project
     description: please select the project
