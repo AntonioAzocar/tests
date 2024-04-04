@@ -30,7 +30,7 @@ body:
   validations:
     required: true
 - type: textarea
-  id: Definition of Done
+  id: definition-of-Done
   attributes:
     label: Definition of Done
     placeholder: |
