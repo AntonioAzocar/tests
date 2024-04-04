@@ -5,8 +5,8 @@ body:
 - type: input
   attributes:
     label: Project
-    description: please select the project
-    placeholder:  
+    placeholder: |
+      please select the project
   validations:
     required: true
 - type: textarea
@@ -16,8 +16,8 @@ body:
     description: select the reason for the activity
     value: |
       - [ ] Update schematics
-      - [ ] Update BOM
-      - [ ] New robot schematics
+      - [ ] Create/Update BOM
+      - [ ] New schematics
       - [ ] Fix error
   validations:
     required: true    
@@ -25,6 +25,17 @@ body:
   id: informations
   attributes:
     label: Additonal informations
-    description: Write an activity description here
+    placeholder: |
+      Write here an activity description
   validations:
     required: true
+- type: textarea
+  id: Definition of Done
+  attributes:
+    label: Definition of Done
+    placeholder: |
+      - [ ] task 1
+      - [ ] task 2
+      - [ ] ...
+  validations:
+    required: true 
