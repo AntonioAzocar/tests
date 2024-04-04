@@ -16,7 +16,7 @@ body:
     description: select the reason for the activity
     value: |
       - [ ] Update schematics
-      - [ ] Create/Update BOM
+      - [ ] Create / Update BOM
       - [ ] New schematics
       - [ ] Fix error
   validations:
