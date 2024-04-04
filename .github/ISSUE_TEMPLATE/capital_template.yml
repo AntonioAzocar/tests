@@ -1,0 +1,41 @@
+name: 💻 Capital  ✏️
+description: Template to create a new task
+labels: team-proto
+body:
+- type: input
+  attributes:
+    label: Project
+    placeholder: |
+      please select the project
+  validations:
+    required: true
+- type: textarea
+  id: activity
+  attributes:
+    label: Activity reason
+    description: select the reason for the activity
+    value: |
+      - [ ] Update schematics
+      - [ ] Create / Update BOM
+      - [ ] New schematics
+      - [ ] Fix error
+  validations:
+    required: true    
+- type: textarea
+  id: informations
+  attributes:
+    label: Additonal informations
+    placeholder: |
+      Write here an activity description
+  validations:
+    required: true
+- type: textarea
+  id: definition-of-Done
+  attributes:
+    label: Definition of Done
+    placeholder: |
+      - [ ] task 1
+      - [ ] task 2
+      - [ ] ...
+  validations:
+    required: true 
